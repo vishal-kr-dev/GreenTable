@@ -76,10 +76,8 @@
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<!-- <li class="nav-item"><a href="causes.html" class="nav-link">Causes</a></li> -->
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-
-					<li class="nav-item"><a href="donate.html" class="nav-link">Donate</a></li>
+					<li class="nav-item"><a href="donor.html" class="nav-link">Donate</a></li>
 
 				</ul>
 			</div>
@@ -88,32 +86,44 @@
 	<!-- END nav -->
 
 	<div class="hero-wrap" style="background:url('images/bg_71.png'); " data-stellar-background-ratio="0.5">
+		<!-- 8462 -->
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-center justify-content-center"
 				data-scrollax-parent="true">
 				<div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
 					<div class="container" style="font-size:40px;">
-						<h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 3 }" .mt-5>Donor Form
-						</h1>
-						<div id="donor-form" class="form">
-							<input type="text" id="donor-name" placeholder="Name" required class="block-18 color-2 align-items-stretch"><br>
-							<input type="tel" id="donor-phone" placeholder="Phone No" required><br>
-							<input type="number" id="donor-food-quantity" placeholder="Food Quantity (plates)" required><br>
-							<input type="text" id="donor-address" placeholder="Address" required><br>
-							<input type="text" id="donor-city" placeholder="City" required><br>
-								
+						<div class="container">
+							<div id="donee-form" class="form">
+								<h2>Donee Form</h2>
+								<button onclick="getAvailableDonors()">Check Available Donors</button>
+								<div id="available-donors"></div>
+							</div>
 						</div>
-						<button class="btn btn-white px-3 py-2 mt-2" style="background-color:blue;" onclick="submitDonorForm()">Submit</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<p class="results">
+		
+	</p>
 
 
-	<!--  main -->
+
+
+
+
+
+
+
+
+	<!-- <<<<<<< main -->
+
+
+
+
 	<section class="ftco-gallery">
 		<div class="d-md-flex">
 			<a href="images/cause-2.jpg"
@@ -221,42 +231,42 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- loader -->
-		<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-				<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-				<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-					stroke="#F96D00" />
-			</svg>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<!-- loader -->
+					<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+						<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+						<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+						</svg>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<!-- <script src="js/jquery.easing.1.3.js"></script> -->
-		<script src="js/jquery.waypoints.min.js"></script>
-		<script src="js/jquery.stellar.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/aos.js"></script>
-		<script src="js/jquery.animateNumber.min.js"></script>
-		<!-- <script src="js/bootstrap-datepicker.js"></script> -->
-		<!-- <script src="js/jquery.timepicker.min.js"></script> -->
-		<script src="js/scrollax.min.js"></script>
-		<script
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-		<script src="js/google-map.js"></script>
-		<script src="js/main.js"></script>
-
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="serverscript.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/jquery.easing.1.3.js"></script> -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<!-- <script src="js/bootstrap-datepicker.js"></script> -->
+	<!-- <script src="js/jquery.timepicker.min.js"></script> -->
+	<script src="js/scrollax.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="serverscript.js"></script>
 
 </body>
 

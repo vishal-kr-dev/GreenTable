@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor/Donee Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="donor-form" class="form">
+            <h2>Donor Form</h2>
+            <input type="text" id="donor-name" placeholder="Name">
+            <input type="tel" id="donor-phone" placeholder="Phone No">
+            <input type="number" id="donor-food-quantity" placeholder="Food Quantity (plates)">
+            <input type="text" id="donor-address" placeholder="Address">
+            <input type="text" id="donor-city" placeholder="City">
+            <button onclick="submitDonorForm()">Submit</button>
+        </div>
+        <div id="donee-form" class="form">
+            <h2>Donee Form</h2>
+            <button onclick="getAvailableDonors()">Check Available Donors</button>
+            <div id="available-donors"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

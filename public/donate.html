@@ -51,7 +51,9 @@
 		background: #1d5191;
 
 	}
-
+   .form input{
+    border: 3px solid blue;
+   }
 </style>
 
 <body>
@@ -66,7 +68,7 @@
 
 			<a class="navbar-brand" href="index.html">
 				<span class="logo-image">
-					<img id="medic-donation-icon" src="images/food.png.png" class="img-fluid">
+                    <img id="medic-donation-icon" src="images/food.png.png" class="img-fluid">
 				</span>Green Table
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -96,8 +98,19 @@
 			<div class="row no-gutters slider-text align-items-center justify-content-center"
 				data-scrollax-parent="true">
 				<div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-					<h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 3 }">Service to others is
-						the rent you pay for your room here on earth.</h1>
+                    <div class="container" style="font-size:40px;">
+                        <h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 3 }" .mt-5>Donor Form</h1>
+                        <div id="donor-form" class="form" >
+                            
+                            <input type="text" id="donor-name" placeholder="Name" required style="background-color: rgb(199, 199, 210);"class="block-18 color-2 align-items-stretch"><br>
+                            <input type="tel" id="donor-phone" placeholder="Phone No" required style="background-color: rgb(199,199 , 210);"><br>
+                            <input type="number" id="donor-food-quantity" placeholder="Food Quantity (plates)" required style="background-color: rgb(199, 199, 210);"><br>
+                            <input type="text" id="donor-address" placeholder="Address" required style="background-color: rgb(199, 199, 210);"><br>
+                            <input type="text" id="donor-city" placeholder="City" required style="background-color: rgb(199, 199, 210);"><br>
+
+                        </div>
+                        <button class="btn btn-white px-3 py-2 mt-2" style="background-color:blue;" onclick="submitDonorForm()" >Submit</button>
+                    </div>
 					<!-- 6174 -->
 
 		
@@ -106,77 +119,14 @@
 		</div>
 	</div>
 
-	<section class="ftco-counter ftco-intro" id="section-counter">
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 color-1 align-items-stretch">
-						<div class="text">
-							<span>"Giving is not just about making a donation. It is about making a difference.”</span>
-                            <strong><span>- Kathy Calvin</span></strong>
-							
-						</div>
-					</div>
-				</div>
-				<form class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 color-2 align-items-stretch">
-						<div class="text">
-							<h3 class="mb-4"> Be A Donor</h3>
-							<p>Become a donor by just donating the extra food. Kindly fill the details of
-								food here.</p>
-							<p><a href="donate.html" class="btn btn-white px-3 py-2 mt-2">Donate Now</a></p>
-						</div>
-					</div>
-					<div class="block-18 color-3 align-items-stretch">
-						<div class="text">
-							<h3 class="mb-4">Be a Donee</h3>
-							<p>Become a donee by registering yourself here.</p>
-							<p><a href="donee.html" class="btn btn-white px-3 py-2 mt-2">Be A Donee</a></p>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
+	
 
-	<section class="ftco-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 d-flex align-self-stretch ftco-animate">
-					<div class="media block-6 d-flex services p-3 py-4 d-block">
-						<div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
-						<div class="media-body pl-4">
-							<h3 class="heading">Who Are Our Donors?</h3>
-							<p>Donors are individuals or organizations who selflessly contribute resources—whether money, food, or other essentials—to support those in need. Their generosity fuels positive change and fosters compassion.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex align-self-stretch ftco-animate">
-					<div class="media block-6 d-flex services p-3 py-4 d-block">
-						<div class="icon d-flex mb-3"><span class="flaticon-charity"></span></div>
-						<div class="media-body pl-4">
-							<h3 class="heading">Who Are Donee?</h3>
-							<p>The donee refers to the recipient of a donation. In the context of a food donation website, the donee could be an individual, family, or organization in need that receives food contributions from donors.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex align-self-stretch ftco-animate">
-					<div class="media block-6 d-flex services p-3 py-4 d-block">
-						<div class="icon d-flex mb-3"><span class="flaticon-donation"></span></div>
-						<div class="media-body pl-4">
-							<h3 class="heading">Sponsorship</h3>
-							<p>Sponsorship on a food donation website involves businesses or individuals providing support through funds or services, helping to sustain the site's mission of feeding the hungry.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 
 	
     
 
-<!--  main -->
+<!-- <<<<<<< main -->
     
         				
         				

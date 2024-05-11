@@ -87,29 +87,39 @@
 	</nav>
 	<!-- END nav -->
 
-	<div class="hero-wrap" style="background:url('images/bg_71.png'); " data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text align-items-center justify-content-center"
-				data-scrollax-parent="true">
-				<div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-					<div class="container" style="font-size:40px;">
-						<h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 3 }" .mt-5>Donor Form
-						</h1>
-						<div id="donor-form" class="form">
-							<input type="text" id="donor-name" placeholder="Name" required class="block-18 color-2 align-items-stretch"><br>
-							<input type="tel" id="donor-phone" placeholder="Phone No" required><br>
-							<input type="number" id="donor-food-quantity" placeholder="Food Quantity (plates)" required><br>
-							<input type="text" id="donor-address" placeholder="Address" required><br>
-							<input type="text" id="donor-city" placeholder="City" required><br>
-								
-						</div>
-						<button class="btn btn-white px-3 py-2 mt-2" style="background-color:blue;" onclick="submitDonorForm()">Submit</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="hero-wrap" style="background:url('images/bg_71.png');" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+            <div class="col-md-7 ftco-animate text-center" data-scrollax="properties: { translateY: '70%' }">
+                <div class="container" style="font-size:40px;">
+                    <h1 class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 3 }">Donor Form</h1>
+                    <div id="donor-form" class="form">
+                        <form id="donor-form">
+                            <div class="form-group">
+                                <input type="text" id="donor-name" name="donor-name" placeholder="Enter your name" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="donor-phone" name="donor-phone" placeholder="Enter your phone number" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="donor-food-quantity" name="donor-food-quantity" placeholder="Food Quantity (plates)" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="donor-address" name="donor-address" placeholder="Enter your address" required class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="donor-city" name="donor-city" placeholder="Enter your city" required class="form-control">
+                            </div>
+                            <button type="submit" class="btn btn-primary px-3 py-2 mt-2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
